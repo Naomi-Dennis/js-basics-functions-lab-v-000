@@ -1,4 +1,5 @@
 // Code your solution in this file!
+'use strict'
 const LOCATION = 42
 const CITY_BLOCK_IN_FEET = 264
 function distanceFromHqInBlocks(distance){
@@ -22,5 +23,11 @@ function calculatesFarePrice(start, destination){
   }
   else if(distance >= 400 && distance <= 2000){
     return (distance - 400) * .02
+  }
+  else if(distance > 2000){
+      let processed_distance = distance;
+      let final_price = 0
+      processed_distance -= 400 // free distance travelled
+      (processed_distance - 2000 == 0) ?
   }
 }

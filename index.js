@@ -6,13 +6,12 @@ function distanceFromHqInBlocks(distance){
 }
 
 function distanceFromHqInFeet(distance){
-  console.log(distance * CITY_BLOCK_IN_FEET)
   return distanceFromHqInBlocks(distance) * CITY_BLOCK_IN_FEET
 }
 
 function distanceTravelledInFeet(start, destination){
     var diff = Math.abs( start - destination )
-    return distanceFromHqInFeet(diff)
+    return distanceFromHqInFeet(diff * CITY_BLOCK_IN_FEET)
 }
 
 function calculatesFarePrice(start, destination){

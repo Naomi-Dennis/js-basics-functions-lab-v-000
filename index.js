@@ -10,8 +10,8 @@ function distanceFromHqInFeet(distance){
 }
 
 function distanceTravelledInFeet(start, destination){
-    var diff = start - destination
-    return diff
+    var diff = Math.abs( start - destination )
+    return distanceFromHqInFeet(diff)
 }
 
 function calculatesFarePrice(start, destination){

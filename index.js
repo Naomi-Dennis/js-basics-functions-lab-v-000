@@ -1,7 +1,7 @@
 // Code your solution in this file!
-const BLOCK_IN_FEET = 42
+const LOCATION = 42
 function distanceFromHqInBlocks(distance){
-  return Math.abs(distance - BLOCK_IN_FEET)
+  return Math.abs(distance - LOCATION)
 }
 
 function distanceFromHqInFeet(distance){

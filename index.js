@@ -30,7 +30,7 @@ function calculatesFarePrice(start, destination){
       processed_distance -= 400 // free distance travelled
       ( (processed_distance - 2000) == 0) ? final_price = processed_distance * 0.02 : final_price = (processed_distance - 2000) * 0.02
       processed_distance -= 2000;
-      (processed_distance > 0) ? final_price += processed_distance * 0.02 : final_price += 0
+      (processed_distance > 0) ? final_price += processed_distance * 0.25 : final_price += 0
       return final_price
   }
 }

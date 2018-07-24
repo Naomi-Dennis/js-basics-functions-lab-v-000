@@ -1,5 +1,5 @@
 // Code your solution in this file!
-const blocks_in_feet = 43
+const BLOCK_IN_FEET = 43
 function distanceFromHqInBlocks(){
 
 }

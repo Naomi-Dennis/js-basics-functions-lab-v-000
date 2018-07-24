@@ -24,7 +24,7 @@ function calculatesFarePrice(start, destination){
   else if(distance >= 400 && distance <= 2000){
     return (distance - 400) * .02
   }
-  else if(distance > 2000){
+  else if(distance > 2000 && distance < 2500){
       let processed_distance = distance;
       let final_price = 0
       processed_distance -= 400 // free distance travelled

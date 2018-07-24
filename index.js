@@ -9,8 +9,8 @@ function distanceFromHqInFeet(distance){
   return distanceFromHqInBlocks(distance) * CITY_BLOCK_IN_FEET
 }
 
-function distanceTravelledInFeet(){
-
+function distanceTravelledInFeet(start, destination){
+    var diff = start - destination
 }
 
 function calculatesFarePrice(start, destination){

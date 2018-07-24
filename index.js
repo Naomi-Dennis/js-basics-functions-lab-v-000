@@ -25,16 +25,6 @@ function calculatesFarePrice(start, destination){
     return (distance - 400) * .02
   }
   else if(distance > 2000 && distance < 2500){
-      let processed_distance = distance;
-      let final_price = 0
-      processed_distance -= 400 // free distance travelled
-      console.log("first 400", processed_distance, final_price)
-      final_price += 1600 * 0.02//the next 1600 feet will always be priced
-        console.log("next 1600", processed_distance, final_price)
-      processed_distance -= 1600;
-
-      final_price += processed_distance * 0.25
-      console.log("final > 2000", processed_distance, final_price)
-      return final_price
+    return 25
   }
 }

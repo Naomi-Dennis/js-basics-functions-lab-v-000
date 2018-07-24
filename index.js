@@ -33,6 +33,7 @@ function calculatesFarePrice(start, destination){
       processed_distance -= 1600;
       console.log("next 1600", processed_distance, final_price)
       final_price += processed_distance * 0.25
+      console.log("next 1600", processed_distance, final_price)
       return final_price
   }
 }

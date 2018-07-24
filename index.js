@@ -6,6 +6,7 @@ function distanceFromHqInBlocks(distance){
 }
 
 function distanceFromHqInFeet(distance){
+  console.log(distance * CITY_BLOCK_IN_FEET)
   return distanceFromHqInBlocks(distance) * CITY_BLOCK_IN_FEET
 }
 

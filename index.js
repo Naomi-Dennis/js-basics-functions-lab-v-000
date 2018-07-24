@@ -19,5 +19,7 @@ function calculatesFarePrice(start, destination){
   if(diff < 400){
     return 0;
   }
-  else if
+  else if(diff >= 400 && diff <= 2000){
+    return diff * .02
+  }
 }

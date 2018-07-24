@@ -20,7 +20,7 @@ function calculatesFarePrice(start, destination){
   if(distance < 400){
     return 0;
   }
-  else if(diff >= 400 && diff <= 2000){
+  else if(distance >= 400 && distance <= 2000){
     return diff * .02
   }
 }

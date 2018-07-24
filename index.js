@@ -16,9 +16,8 @@ function distanceTravelledInFeet(start, destination){
 
 function calculatesFarePrice(start, destination){
   var diff = Math.abs(destination - start)
-  var distance = distanceFromHqInFeet(diff)
+  var distance = distanceTravelledInFeet(diff)
   if(distance < 400){
-    console.log(diff, distance)
     return 0;
   }
   else if(diff >= 400 && diff <= 2000){

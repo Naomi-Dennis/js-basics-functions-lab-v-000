@@ -31,6 +31,7 @@ function calculatesFarePrice(start, destination){
       console.log("first 400", processed_distance, final_price)
       final_price += 1600 * 0.02//the next 1600 feet will always be priced
       processed_distance -= 1600;
+      console.log("next 1600", processed_distance, final_price)
       final_price += processed_distance * 0.25
       return final_price
   }

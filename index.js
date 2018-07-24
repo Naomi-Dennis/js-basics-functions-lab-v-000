@@ -1,10 +1,10 @@
 // Code your solution in this file!
 const BLOCK_IN_FEET = 43
-function distanceFromHqInBlocks(){
+function distanceFromHqInBlocks(distance){
 
 }
 
-function distanceFromHqInFeet(){
+function distanceFromHqInFeet(distance){
 
 }
 

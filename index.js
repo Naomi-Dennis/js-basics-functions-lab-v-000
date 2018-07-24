@@ -28,8 +28,9 @@ function calculatesFarePrice(start, destination){
       let processed_distance = distance;
       let final_price = 0
       processed_distance -= 400 // free distance travelled
-      final_price += 1600 * 0.02
-      processed_distance -= 1600; 
+      final_price += 1600 * 0.02//the next 1600 feet will always be priced
+      processed_distance -= 1600;
+      final_price += processed_distance * 0.25
       return final_price
   }
 }
